@@ -1,6 +1,18 @@
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .menu-button{
@@ -54,4 +66,114 @@ body{
 
 .header-nav a:hover{
     color: #63c6ae;
+}
+.hero{
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(-45deg, white 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat,
+                linear-gradient(45deg, white 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat,
+        url("../img/01.jpg");
+    background-size: 40px 40px, 40px 40px, cover;
+}
+
+
+.hero-btn{
+    border: 1px solid rgba(255, 255, 255, .3);
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    padding: 15px 25px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: ease .1s;
+}
+
+.hero-btn:hover{
+    background-color: rgba(0, 0, 0, .5);
+    color: #63c6ae;
+}
+
+.hero-text{
+    background-color: #242a2c;
+    margin: 5px 30px 35px;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+.hero-title{
+    background-color: #63c6ae;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 30px 20px;
+    text-transform: uppercase;
+}
+
+.hero-title abbr{
+    text-decoration: none;
+}
+
+.cards{
+    margin-top: 2.5em;
+}
+
+.cards-avatar{
+    margin: -55px auto;
+    width: 88px;
+    height: 88px;
+    overflow: hidden;
+}
+
+.cards-card{
+
+}
+
+.cards-card:hover{
+    outline: 5px solid #63c6ae;
+    outline-offset: -5px;
+}
+
+.cards-card:hover .cards-avatar img{
+    transform: translateY(-50%);
+}
+
+.cards-card:hover .cards-title,
+.cards-card:hover .cards-text,{
+    color: #63c6ae;
+}
+
+
+.cards-content{
+    padding: 40px 25px 10px;
+    text-align: center;
+    border-left: 1px solid #dbe1e7;
+}
+
+.cards-img{
+    width: 100%;
+}
+
+.cards-img{
+
+}
+
+.cards-title{
+    color: #737c85;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.cards-text{
+    color: #929da5;
+    font-size: 14px;
 }
