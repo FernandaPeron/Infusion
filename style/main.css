@@ -8,6 +8,11 @@ img{
     max-width: 100%;
 }
 
+.js .header{
+    position: fixed;
+    width: 100%;
+}
+
 .container{
     margin-right: auto;
     margin-left: auto;
