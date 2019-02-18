@@ -1,11 +1,13 @@
 function Menu(config) {
-    this.nav =  document.getElementsByClassName(config.container).item(0);
-    this.btn = document.getElementsByClassName(config.toggleBtn).item(0);
+    this.nav = ( typeof config.container === 'string')
+        ? document.querySelector(config.container) : config.container;
+    this.btn = ( typeof config.toggleBtn === 'string')
+        ? document.querySelector(config.toggleBtn) : config.toggleBtn;
 
-    var opened = false;
+    var opened = true;
     var _this = this;
 
-    closeMenu('0px', 'unset');
+    openOrClose();
 
     this.btn.addEventListener('click', openOrClose);
 
