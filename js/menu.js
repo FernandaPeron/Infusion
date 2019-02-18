@@ -5,17 +5,23 @@ function Menu(config) {
     var opened = false;
     var _this = this;
 
-    closeMenu();
+    closeMenu('0px', 'unset');
 
     this.btn.addEventListener('click', openOrClose);
+
+    window.addEventListener('resize', function() {
+        if(window.innerWidth > 920) {
+            _this.nav.removeAttribute('style');
+            opened = true;
+        }
+    });
 
     function openOrClose() {
         if(!opened){
             openMenu();
             return;
         }
-        closeMenu();
-
+        closeMenu('0px', 'hidden');
     }
 
     function openMenu() {
@@ -36,11 +42,10 @@ function Menu(config) {
         });
     }
 
-
-    function closeMenu() {
+    function closeMenu(height, overflow) {
         var _style = {
-            maxHeight: '0px',
-            overflow: 'hidden'
+            maxHeight: height,
+            overflow: overflow
         };
 
         applyStyleToNav(_style);

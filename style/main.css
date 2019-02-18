@@ -28,6 +28,11 @@ img{
     background: transparent;
     border: none;
     font-size: 25px;
+    cursor: pointer;
+}
+
+.menu-button:focus{
+    outline: 0;
 }
 
 .header{
@@ -350,6 +355,7 @@ img{
         width: 75%;
         clear: none;
         max-width: 800px;
+        min-width: auto;
     }
 
     .js .header-nav{
