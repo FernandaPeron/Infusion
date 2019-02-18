@@ -6,7 +6,7 @@ function Carousel(config){
     this.prevBtn = ( typeof config.prevBtn === 'string')
         ? this.container.querySelector(config.prevBtn) : config.prevBtn;
     this.nextBtn = ( typeof config.nextBtn === 'string')
-        ? this.container.querySelectorAll(config.nextBtn) : config.nextBtn;
+        ? this.container.querySelector(config.nextBtn) : config.nextBtn;
 
     var _this = this;
     var _currentSlide = 0;

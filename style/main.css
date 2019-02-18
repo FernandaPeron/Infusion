@@ -15,6 +15,69 @@ img{
     z-index: 10;
 }
 
+.js .slider, .js .quote{
+    overflow: hidden;
+    color: #fff;
+}
+
+.js .slider .slideshow, .js .quote .quote-slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+}
+
+.js .slider figure, .js .quote figure{
+    opacity: 0;
+    transition: 1s opacity;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.js .slider figure.show, .js .quote figure.show{
+    opacity: 1;
+    position: static;
+}
+
+.js .slider .prev, .js .slider .next, .js .quote .prev, .js .quote .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.js .slider .prev{
+    left: 10px;
+}
+
+.js .slider .next{
+    right: 10px;
+}
+
+.js .quote .prev{
+    left: -100px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .1);
+    text-align: center;
+    width: 29px;
+    height: 30px;
+}
+
+.js .quote .next{
+    right: -100px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .1);
+    text-align: center;
+    width: 29px;
+    height: 30px;
+}
+
+.js .quote-slideshow figure h2{
+    margin-top: -16px;
+}
+
 .container{
     margin-right: auto;
     margin-left: auto;
@@ -361,45 +424,6 @@ img{
 
     .js .header-nav{
         transition: max-height 1s;
-    }
-
-    .js .slider{
-        overflow: hidden;
-    }
-
-    .js .slider .slideshow{
-        position: relative;
-        width: 100%;
-        margin: auto;
-    }
-
-    .js .slider figure{
-        opacity: 1;
-        transition: 1s opacity;
-        width: 100%;
-
-    }
-
-    .js .slider figure .show{
-        position: absolute;
-        opacity: 1;
-        top: 0;
-        left: 0;
-    }
-    
-    .js .slider .prev, .js .slider .next{
-        z-index: 3;
-        position: absolute;
-        top: 50%;
-        cursor: pointer;
-    }
-
-    .js .slider .prev{
-        left: 10px;
-    }
-    
-    .js .slider .next{
-        right: 10px;
     }
 
     .header-nav ul{

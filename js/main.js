@@ -15,4 +15,11 @@
         prevBtn: '.prev',
         nextBtn: '.next'
     })
+
+    var carouselQuotes = new Carousel({
+        container: '.quote-slideshow',
+        itens: 'figure',
+        prevBtn: '.prev',
+        nextBtn: '.next'
+    })
 })();
