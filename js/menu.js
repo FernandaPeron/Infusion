@@ -8,14 +8,19 @@ function Menu(config) {
     var _this = this;
 
     openOrClose();
+    checkScreenNav();
 
     this.btn.addEventListener('click', openOrClose);
 
-    window.addEventListener('resize', function() {
-        if(window.innerWidth > 920) {
+    function checkScreenNav() {
+        if (window.innerWidth > 920) {
             _this.nav.removeAttribute('style');
             opened = true;
         }
+    }
+
+    window.addEventListener('resize', function() {
+        checkScreenNav();
     });
 
     function openOrClose() {

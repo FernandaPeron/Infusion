@@ -7,12 +7,12 @@
         container: '.header-nav',
         toggleBtn: '.menu-button',
         widthEnabled: 920
-    })
+    });
 
-    var carouselImgs = new Carousel({
+    var carousel = new Carousel({
         container: '.slider .slideshow',
         itens: 'figure',
         prevBtn: '.prev',
         nextBtn: '.next'
     })
-})()
+})();
