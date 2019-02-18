@@ -11,6 +11,7 @@ img{
 .js .header{
     position: fixed;
     width: 100%;
+    height: 76px;
 }
 
 .container{
@@ -50,6 +51,8 @@ img{
 
 .header-nav{
     clear: left;
+    min-width: 100%;
+    transition: ease-in-out .6s;
 }
 
 .header-nav ul {
