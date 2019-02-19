@@ -18,6 +18,7 @@ img{
 .js .slider, .js .quote{
     overflow: hidden;
     color: #fff;
+    align-items: center;
 }
 
 .js .slider .slideshow, .js .quote .quote-slideshow{
@@ -25,20 +26,23 @@ img{
     width: 100%;
     margin: auto;
     max-width: 950px;
+    text-justify: auto;
 }
 
 .js .slider figure, .js .quote figure{
     opacity: 0;
     transition: 1s opacity;
-    width: 100%;
+    width: 90%;
+    left: 18px;
     position: absolute;
     top: 0;
-    left: 0;
 }
 
 .js .slider figure.show, .js .quote figure.show{
     opacity: 1;
-    position: static;
+    width: 90%;
+    left: 18px;;
+    position: relative;
 }
 
 .js .slider .prev, .js .slider .next, .js .quote .prev, .js .quote .next{
@@ -57,7 +61,7 @@ img{
 }
 
 .js .quote .prev{
-    left: -100px;
+    left: 0;
     border-radius: 50%;
     background: rgba(0, 0, 0, .1);
     text-align: center;
@@ -66,7 +70,7 @@ img{
 }
 
 .js .quote .next{
-    right: -100px;
+    right: 0;
     border-radius: 50%;
     background: rgba(0, 0, 0, .1);
     text-align: center;
@@ -478,4 +482,33 @@ img{
     .footer .container h2{
         width: 700px;
     }
+
+    .js .quote .prev{
+        left: -100px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, .1);
+        text-align: center;
+        width: 29px;
+        height: 30px;
+    }
+
+    .js .quote .next{
+        right: -100px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, .1);
+        text-align: center;
+        width: 29px;
+        height: 30px;
+    }
+
+    .angle-right{
+        position: absolute;
+        left: 8px;
+    }
+
+    .angle-left{
+        position: absolute;
+        right: 8px;
+    }
+
 }

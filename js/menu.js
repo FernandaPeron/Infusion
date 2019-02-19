@@ -15,7 +15,7 @@ function Menu(config) {
     function checkScreenNav() {
         if (window.innerWidth > 920) {
             _this.nav.removeAttribute('style');
-            opened = true;
+            openOrClose();
         }
     }
 
